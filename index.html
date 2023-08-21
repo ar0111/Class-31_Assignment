@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanye Rest API</title>
+
+    <style>
+        #html-friends{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        #html-friends div{
+            text-align: center;
+            background-color: beige;
+            padding: 10px;
+        }
+
+        #html-friends img{
+            border-radius: 50%;
+        }
+
+        #html-friends h2{
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        #country{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .country-info{
+            padding: 10px;
+            background-color: bisque;
+            text-align: center;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Kanye API Data Show</h1>
+    <blockquote id="quote"></blockquote>
+    <button onclick="loadKanye()">Load Kanye API</button>
+
+    <h1>Show Our Friends</h1>
+    <div id="html-friends">
+    </div>
+
+    <h1>Show All Countries</h1>
+    <section>
+        <div id="country-details">
+
+        </div>
+        <div id="country">
+
+        </div>
+    </section>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
